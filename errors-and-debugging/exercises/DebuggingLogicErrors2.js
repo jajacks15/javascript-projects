@@ -3,6 +3,10 @@
 // Add console.log(launchReady) after this block, then run the program.
 
 //Given the fuelLevel value, should launchReady be true or false after the check?  Is the program behaving as expected?
+   /* The fuelLevel value is below 20000, so launchReady should be false. 
+   I can't tell if the program is behaving as expected. The correct warning
+   message displays, but shouldn't the boolean value "false" appear in the 
+   console since that is the code I added in the end? -Julian */
 
 let launchReady = false;
 let fuelLevel = 17000;
@@ -15,7 +19,7 @@ if (fuelLevel >= 20000) {
 } else {
    console.log('WARNING: Insufficient fuel!');
    launchReady = false;
-}
+} console.log(launchReady)
 
 // if (crewStatus && computerStatus === 'green'){
 //    console.log('Crew & computer cleared.');
