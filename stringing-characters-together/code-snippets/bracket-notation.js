@@ -1,4 +1,3 @@
-let jsCreator = "Brendan Eich";
+let word = "JavaScript"
 
-console.log(jsCreator[-1]);
-console.log(jsCreator[42]);
+word.slice(4).toUpperCase()
