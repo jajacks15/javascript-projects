@@ -8,6 +8,25 @@
 // 4. Below the function, define and initialize a variable to hold a string.
 // 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
 // 6. Optional: Use method chaining to reduce the lines of code within the function.
+let test = "apple";
+let testTwo = "LC101"
+let testThree = "Capitalized Letters";
+let testFour = "I love the smell of code in the morning."
+// let testFive = 1234
+
+function reverseCharacters(str) {
+    if (typeof str === "string") {
+        return str.split("").reverse().join("");
+    } else if (typeof str !== "string") {
+        str.toString().split("").reverse().join("");
+        return Number(str);
+    }
+}
+// console.log(reverseCharacters(test));
+// console.log(reverseCharacters(testTwo));
+// console.log(reverseCharacters(testThree));
+// console.log(reverseCharacters(testFour));
+
 
 // Part Two: Reverse Digits
 
@@ -16,6 +35,17 @@
 // 3. If typeof is ’number’, convert the parameter to a string, reverse the characters, then convert it back into a number.
 // 4. Return the reversed number.
 // 5. Be sure to print the result returned by the function to verify that your code works for both strings and numbers. Do this before moving on to the next exercise.
+// console.log(reverseCharacters(testFive));
+
+let numTest = 1234
+let numTestTwo = 8675309
+let testFive = 'radar'
+
+console.log("\n");
+console.log(reverseCharacters(numTest));
+console.log(reverseCharacters(numTestTwo));
+console.log(reverseCharacters(testTwo));
+console.log(reverseCharacters(testFive));
 
 // Part Three: Complete Reversal
 
@@ -30,6 +60,16 @@ let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
 
+function reverseItems(arr) {
+    let emptyArr = [];
+    for (let i = 0; i < arr.length; i++){
+       emptyArr += reverseCharacters(arr[i]);
+       return emptyArr;
+    }
+}
+console.log(reverseItems(arrayTest1));
+console.log(reverseItems(arrayTest2));
+console.log(reverseItems(arrayTest3));
 // Bonus Missions
 
 // 1. Have a clear, descriptive name like funPhrase.
