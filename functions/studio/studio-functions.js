@@ -62,10 +62,12 @@ let arrayTest3 = ['hello', 'world', 123, 'orange'];
 
 function reverseItems(arr) {
     let emptyArr = [];
-    for (let i = 0; i < arr.length; i++){
-       emptyArr += reverseCharacters(arr[i]);
-       return emptyArr;
+    for (let i = arr.length - 1; i >= 0; i--){
+       reversedItem = reverseCharacters(arr[i]);
+       emptyArr.push(reversedItem);
+       // push reversed items into the new array
     }
+    return emptyArr;
 }
 console.log(reverseItems(arrayTest1));
 console.log(reverseItems(arrayTest2));
