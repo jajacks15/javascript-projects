@@ -19,4 +19,4 @@ module.exports = {
     isPalindrome: isPalindrome,
     evenOrOdd: evenOrOdd,
     randomArrayElement: randomArrayElement
-};
+} 
