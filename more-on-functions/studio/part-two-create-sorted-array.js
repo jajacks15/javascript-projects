@@ -8,6 +8,8 @@ function findMinValue(arr){
   return min;
 }
 
+// Use while loop
+
 //Create a function with an array of numbers as its parameter. This function will return a new array with the numbers sorted from least to greatest value.
 
 /*Within the function:

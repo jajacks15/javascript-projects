@@ -4,4 +4,4 @@ function reverse(str) {
   return reversedLettersArray.join('');
 }
 
-console.log(reverse("LaunchCode"));
+console.log(reverse("LaunchCode"));node

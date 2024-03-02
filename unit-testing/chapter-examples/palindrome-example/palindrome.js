@@ -1,9 +1,15 @@
-function reverse(str) {
-   return str.split('').reverse().join('');
- }
+// function reverse(str) {
+//    return str.split('').reverse().join('');
+//  }
  
- function isPalindrome(str) {
-   return reverse(str) === str;
- }
+//  function isPalindrome(str) {
+//    return reverse(str) === str;
+//  }
  
- module.exports = isPalindrome;
+//  module.exports = isPalindrome;
+
+function parseData(text, delimiter) {
+  return text.split(delimiter);
+}
+
+module.exports = parseData;
